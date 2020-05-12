@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="App" id="home">
       <header className="App-header">
-        <div id="navbar" className="container" style={{ margin: "0px", zIndex: "100" }}>
+        <div id="navbar" className="container" style={{ margin: "0px", zIndex: "100"}}>
           <div id="navlinks">
             <a href="#home" >Home</a>
             <a href="#about" >About</a>
