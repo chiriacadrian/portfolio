@@ -43,14 +43,18 @@
     // Hide/show menu on scroll
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        $('#navbar').fadeIn(300);
+      if (screen.width > 500) {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          $('#navbar').fadeIn(300);
+        }
+        else {
+          $('#navbar').fadeOut(300);
+        }
+        prevScrollpos = currentScrollPos;
+      } else {
+        $('#navbar').style.display = "none";
       }
-      else {
-        $('#navbar').fadeOut(300);
-      }
-      prevScrollpos = currentScrollPos;
     }
   </script>
 </body>
