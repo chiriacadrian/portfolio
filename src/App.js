@@ -9,6 +9,7 @@ import Converter from './images/converter.jpg';
 import Exams from './images/exams.jpg';
 import Viotrans from './images/viotrans.jpg';
 import Portfolio from './images/portfolio.jpg';
+import Movies from './images/movies.jpg';
 
 // Skills icons
 import Bootstrap from './images/icons/bootstrap.png'
@@ -121,6 +122,15 @@ function App() {
             viewCodeUrl="https://github.com/chiriacadrian/portfolio/"
             liveDisabled={true}
             seeLiveUrl=""
+          />
+          <ProjectCard
+            id="6"
+            image={Movies}
+            title="Movie Info Point"
+            description='A simple responsive react application that allows you to search for movies and get some information about them using the "The Movie DB" API.'
+            technologies={["html", "css", "javascript", "react.js"]}
+            viewCodeUrl="https://github.com/chiriacadrian/movie-info-point/"
+            seeLiveUrl="https://chiriacadrian.github.io/movie-info-point/"
           />
         </div>
       </section>
