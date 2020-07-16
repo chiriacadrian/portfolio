@@ -10,6 +10,7 @@ import Exams from './images/exams.jpg';
 import Viotrans from './images/viotrans.jpg';
 import Portfolio from './images/portfolio.jpg';
 import Movies from './images/movies.jpg';
+import BreakingBad from './images/breakingbad.jpg'
 
 // Skills icons
 import Bootstrap from './images/icons/bootstrap.png'
@@ -131,6 +132,15 @@ function App() {
             technologies={["html", "css", "javascript", "react.js"]}
             viewCodeUrl="https://github.com/chiriacadrian/movie-info-point/"
             seeLiveUrl="https://chiriacadrian.github.io/movie-info-point/"
+          />
+          <ProjectCard
+            id="7"
+            image={BreakingBad}
+            title="Breaking Bad Characters"
+            description='A react project that uses the breaking bad api (https://breakingbadapi.com/documentation) to show and filter characters from the famous TV series'
+            technologies={["html", "css", "javascript", "react.js"]}
+            viewCodeUrl="https://github.com/chiriacadrian/breaking-bad-characters/"
+            seeLiveUrl="https://chiriacadrian.github.io/breaking-bad-characters/"
           />
         </div>
       </section>
