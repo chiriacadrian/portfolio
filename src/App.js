@@ -137,7 +137,7 @@ function App() {
             id="7"
             image={BreakingBad}
             title="Breaking Bad Characters"
-            description='A react project that uses the breaking bad api (https://breakingbadapi.com/documentation) to show and filter characters from the famous TV series'
+            description='A react project that uses the breaking bad api to show and filter characters from the famous TV series'
             technologies={["html", "css", "javascript", "react.js"]}
             viewCodeUrl="https://github.com/chiriacadrian/breaking-bad-characters/"
             seeLiveUrl="https://chiriacadrian.github.io/breaking-bad-characters/"
