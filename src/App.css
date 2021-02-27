@@ -31,7 +31,7 @@
   font-weight: 450;
 }
 
-#about::before, #projects::before, #skills::before {
+#about::before, #projects::before, #skills::before, #work::before {
   content: '';
   display: block;
   height:      75px;
@@ -39,7 +39,7 @@
   visibility: hidden;
 }
 
-#about, #projects, #skills, #contact {
+#about, #projects, #skills, #contact, #work {
   margin-top: 150px;
 }
 
@@ -100,15 +100,47 @@
     opacity: 1;
 }
 
-#skills img {
+#skills div img {
   transition: filter .3s ease-in-out;
   -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
   filter: grayscale(0%); /* FF 35+ */
 }
 
-#skills img:hover {
+#skills div:hover img {
   -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
   filter: grayscale(100%); /* FF 35+ */
+}
+
+.tooltip {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  font-size: small;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  box-shadow: 0 5px 10px rgb(24, 24, 24); 
+  text-align: center;
+
+  z-index: 5000;
+  opacity: 0;
+  width: 120%;
+  padding: 5px 5px;
+  transition: opacity .3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+  z-index: 5000;
 }
 
 #navbar {
@@ -280,7 +312,18 @@ animation: move-wave 3s;
   animation: moveWave 15s linear infinite;
 }
 
-
+/* @media screen and (max-width: 400px) {
+  #skills button {
+    padding: 5px 0px;
+  }
+} */
+#skills button {
+  min-width: 30%;
+  max-width: 60%; 
+  margin: 50px 0; 
+  padding: 20px 50px; 
+  font-size:20px;
+}
 
 @media screen and (max-width: 500px) {
   .container {
@@ -297,8 +340,18 @@ animation: move-wave 3s;
     margin: 20px auto;
   }
 
+  #skills button {
+    padding: 13px 35px;
+  }
+
   footer span {
     display: none;
+  }
+
+  .tooltip .tooltiptext {
+    font-size: x-small;
+    width: 120%;
+    padding: 1px 5px;
   }
 }
 
